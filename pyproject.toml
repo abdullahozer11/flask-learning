@@ -3,15 +3,29 @@ name = "flask-tutorial"
 version = "0.1.0"
 description = ""
 authors = ["Abdullah Ozer <abdullahozer11@hotmail.com>"]
+license = "MIT"
 readme = "README.md"
+repository = "https://github.com/abdullahozer11/flask-tutorial"
+keywords = ["flask", "poetry", "learning", "basics"]
+
 
 [tool.poetry.dependencies]
 python = "^3.11"
 flask = "^3.0.3"
 python-dotenv = "^1.0.1"
 watchdog = "^4.0.1"
+isort = "^5.13.2"
+flake8 = "^7.1.0"
+black = "^24.4.2"
 
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.2"
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
